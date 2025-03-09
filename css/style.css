@@ -8,7 +8,6 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
 *,
 *::after,
 *::before {
@@ -28,22 +27,15 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem;
-
   box-sizing: border-box;
 }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 0.799),
-      rgba(40, 180, 133, 0.79)
-    ),
-    url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.799), rgba(40, 180, 133, 0.79)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
-
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
@@ -69,7 +61,6 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-
   margin-bottom: 6rem;
 }
 
@@ -78,7 +69,6 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
-
   animation: moveInleft 1s ease-out;
 }
 
@@ -87,7 +77,6 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.74rem;
-
   animation: moveInright 1s ease-out;
 }
 
@@ -96,27 +85,22 @@ body {
     opacity: 0;
     transform: translateX(-10rem);
   }
-
   80% {
     transform: translateX(1rem);
   }
-
   100% {
     opacity: 1;
     transform: translate(0);
   }
 }
-
 @keyframes moveInright {
   0% {
     opacity: 0;
     transform: translateX(10rem);
   }
-
   80% {
     transform: translateX(-1rem);
   }
-
   100% {
     opacity: 1;
     transform: translate(0);
@@ -127,13 +111,11 @@ body {
     opacity: 0;
     transform: translateY(3rem);
   }
-
   100% {
     opacity: 1;
     transform: translate(0);
   }
 }
-
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -148,12 +130,12 @@ body {
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgb(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn--white {
@@ -173,6 +155,7 @@ body {
   z-index: -1;
   transition: all 0.4s;
 }
+
 .btn--white::after {
   background-color: #fff;
 }
@@ -184,6 +167,5 @@ body {
 
 .btn--anmited {
   animation: moveInbootom 0.5s ease-out 0.75s;
-
   animation-fill-mode: backwards;
-}
+}/*# sourceMappingURL=style.css.map */
